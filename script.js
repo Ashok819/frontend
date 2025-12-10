@@ -23,7 +23,7 @@ async function detectLoop() {
     formData.append("file", blob, "frame.jpg");
 
     // Replace YOUR_BACKEND_URL with Render URL
-    const res = await fetch("YOUR_BACKEND_URL/detect", {
+    const res = await fetch("https://backend-0pvb.onrender.com", {
         method: "POST",
         body: formData
     });
@@ -42,3 +42,4 @@ function showCounts(counts) {
 }
 
 startCamera();
+
